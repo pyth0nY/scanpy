@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource prefix="/">
+    <file>icons/scan.svg</file>
+    <file>icons/stop.svg</file>
+    <file>icons/ip.svg</file>
+    <file>icons/target.svg</file>
+</qresource>
+</RCC>

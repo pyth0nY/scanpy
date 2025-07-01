@@ -1,0 +1,134 @@
+/* style.qss - Hoja de Estilo para CyberScan */
+
+QWidget {
+    background-color: #2c313c;
+    color: #f0f0f0;
+    font-family: "Segoe UI", "Roboto", "Arial", sans-serif;
+    font-size: 14px;
+}
+
+QMainWindow {
+    border-image: url(icons/background.png) 0 0 0 0 stretch stretch; /* Opcional: si quieres un fondo con textura */
+    border-radius: 10px;
+}
+
+/* --- Botones --- */
+QPushButton {
+    background-color: #5d6d7e;
+    border: 1px solid #5d6d7e;
+    padding: 8px;
+    border-radius: 5px;
+}
+QPushButton:hover {
+    background-color: #718093;
+    border: 1px solid #1abc9c;
+}
+QPushButton:pressed {
+    background-color: #1abc9c;
+    color: #2c313c;
+}
+QPushButton:disabled {
+    background-color: #4a5568;
+    color: #a0aec0;
+}
+
+/* Botón de Escaneo Especial */
+#scanButton {
+    background-color: #1abc9c;
+    color: #2c313c;
+    font-weight: bold;
+}
+#scanButton:hover {
+    background-color: #1dd2af;
+}
+#scanButton:pressed {
+    background-color: #17a688;
+}
+
+/* --- Campos de Entrada --- */
+QLineEdit {
+    background-color: #22262f;
+    border: 1px solid #5d6d7e;
+    padding: 8px;
+    border-radius: 5px;
+}
+QLineEdit:focus {
+    border: 1px solid #1abc9c;
+}
+
+/* --- Tabla de Resultados --- */
+QTableWidget {
+    background-color: #22262f;
+    gridline-color: #4a5568;
+    border: 1px solid #5d6d7e;
+    border-radius: 5px;
+}
+QHeaderView::section {
+    background-color: #4a5568;
+    color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #5d6d7e;
+    font-weight: bold;
+}
+QTableWidget::item {
+    padding: 5px;
+}
+
+/* --- Barra de Progreso (la usaremos como indicador) --- */
+QProgressBar {
+    border: 1px solid #5d6d7e;
+    border-radius: 5px;
+    text-align: center;
+    color: #f0f0f0;
+}
+QProgressBar::chunk {
+    background-color: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #1abc9c, stop:1 #16a085);
+    width: 20px; /* Ancho del trozo de la animación */
+}
+
+/* --- Checkbox --- */
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+}
+QCheckBox::indicator:unchecked {
+    border: 1px solid #5d6d7e;
+    background-color: #22262f;
+    border-radius: 4px;
+}
+QCheckBox::indicator:checked {
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+    border-radius: 4px;
+    image: url(:/icons/check.svg); /* Necesitarás un 'check.svg' si quieres un check personalizado */
+}
+
+/* --- ScrollBars --- */
+QScrollBar:vertical {
+    border: none;
+    background: #22262f;
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+    background: #5d6d7e;
+    min-height: 20px;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #1abc9c;
+}
+QScrollBar:horizontal {
+    border: none;
+    background: #22262f;
+    height: 10px;
+    margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:horizontal {
+    background: #5d6d7e;
+    min-width: 20px;
+    border-radius: 5px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #1abc9c;
+}
