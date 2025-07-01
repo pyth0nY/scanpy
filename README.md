@@ -48,8 +48,11 @@ cd cyberscan
 
 ### 📁 Estructura del Proyecto
 
-📁 Estructura del Proyecto
-Generated text
+## 📁 Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera para mantener el código limpio y los recursos separados:
+
+```text
 cyberscan/
 ├── icons/                # Directorio para todos los iconos .svg
 │   ├── export.svg
