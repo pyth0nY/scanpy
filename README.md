@@ -43,7 +43,7 @@ Para ejecutar CyberScan en tu máquina local, sigue estos pasos.
 
 **1. Clona el repositorio:**
 
-git clone https://github.com/tu_usuario/cyberscan.git
+git clone (https://github.com/pyth0nY/scanpy)
 cd cyberscan
 
 ### 📁 Estructura del Proyecto
