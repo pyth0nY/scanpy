@@ -48,16 +48,25 @@ cd cyberscan
 
 ### 📁 Estructura del Proyecto
 
--   **`icons/`**: Cont como __pycache__ y .venv
+📁 Estructura del Proyecto
+Generated text
+cyberscan/
+├── icons/                # Directorio para todos los iconos .svg
+│   ├── export.svg
+│   ├── info.svg
+│   ├── ip.svg
+│   ├── scan.svg
+│   ├── stop.svg
+│   └── target.svg
+│
+├── .gitignore            # Archivo para ignorar directorios (ej. __pycache__, .venv)
 ├── cyberscan.py          # Código fuente principal de la aplicación
-├──iene todos los iconos vectoriales (`.svg`) utilizados en la interfaz.
--   **`cyberscan. README.md             # Este archivo
-├── requirements.txt      # Lista de dependencias de Python
-├── resources.qrc         py`**: El corazón de la aplicación, contiene toda la lógica y la definición de la GUI.
--   **`requirements.# Archivo XML que lista los recursos (iconos)
-├── resources_rc.py       # Archivo autogenerado por pyside6-rcc (NO TOCAR)
-└── style.qss             # Hojaás que la diferencia es como de la noche al díatxt`**: Lista las dependencias de Python para una fácil instalación (`pip install -r requirements.txt`).
--    de estilos para la interfaz gráfica
+├── README.md             # Este mismo archivo de documentación
+├── requirements.txt      # Lista de dependencias de Python para una fácil instalación
+├── resources.qrc         # Archivo XML que define qué iconos se incluirán
+├── resources_rc.py       # Archivo Python autogenerado por pyside6-rcc (NO TOCAR)
+└── style.qss             # Hoja de estilos que le da el look & feel a la app
+
 ### ⚠️ Advertencia de Uso Ético
 Este software se ha desarrollado con fines puramente educativos y para la autoevaluación de seguridad.
 ### 🔴 NO UTILICES ESTA HERRAMIENTA EN REDES O SISTEMAS QUE NO SEAN DE TU PROPIEDAD o sobre los que no tengas permiso explícito y por escrito.
